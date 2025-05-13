@@ -1,9 +1,18 @@
 package com.g_29.FirstApp.model;
 
-//@Component
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
+    @Id
     private long id;
+
+    @Column(name="name")
     private String name;
+
+    @Column(name = "author")
     private String author;
 
     public Course(){
@@ -39,15 +48,4 @@ public class Course {
     public void setAuthor(String author) {
         this.author = author;
     }
-
-    @Override
-    public String toString() {
-        return "Course{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                '}';
-    }
-
-
 }
