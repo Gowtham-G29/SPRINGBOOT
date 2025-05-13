@@ -1,11 +1,14 @@
 package com.g_29.FirstApp.model;
 
-
+//@Component
 public class Course {
     private long id;
     private String name;
     private String author;
 
+    public Course(){
+
+    }
 
     public Course(long id, String name, String author) {
         this.id = id;
